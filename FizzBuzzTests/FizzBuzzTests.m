@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "FizzBuzz.h"
 
 @interface FizzBuzzTests : XCTestCase
 
@@ -14,24 +15,27 @@
 
 @implementation FizzBuzzTests
 
-- (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testPrint {
+    FizzBuzz *object = [FizzBuzz new];
+    NSArray *log = [object print];
+    XCTAssertEqual(log.count, 100);
+    for (int i = 0; i < log.count; i ++) {
+        NSInteger index = i + 1;
+        id value = log[i];
+        if (index % 3 == 0 && index % 5 == 0) {
+//            XCTAssertTrue([value isMemberOfClass:NSString.class]);
+            XCTAssertTrue([value isEqualToString:@"FizzBuzz"]);
+        } else if (index % 3 == 0) {
+//            XCTAssertTrue([value isMemberOfClass:NSString.class]);
+            XCTAssertTrue([value isEqualToString:@"Fizz"]);
+        } else if (index % 5 == 0) {
+//            XCTAssertTrue([value isMemberOfClass:NSString.class]);
+            XCTAssertTrue([value isEqualToString:@"Buzz"]);
+        } else {
+//            XCTAssertTrue([value isMemberOfClass:NSNumber.class]);
+            XCTAssertEqual([value integerValue], index);
+        }
+    }
 }
 
 @end

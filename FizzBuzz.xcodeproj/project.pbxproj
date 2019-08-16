@@ -15,6 +15,7 @@
 		2C151C5023075DD8003094CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C151C4F23075DD8003094CA /* main.m */; };
 		2C151C5A23075DD8003094CA /* FizzBuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C151C5923075DD8003094CA /* FizzBuzzTests.m */; };
 		2C151C6523075DD8003094CA /* FizzBuzzUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C151C6423075DD8003094CA /* FizzBuzzUITests.m */; };
+		2C151C742307626E003094CA /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C151C732307626E003094CA /* FizzBuzz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2C151C6023075DD8003094CA /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C151C6423075DD8003094CA /* FizzBuzzUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzUITests.m; sourceTree = "<group>"; };
 		2C151C6623075DD8003094CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C151C722307626E003094CA /* FizzBuzz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
+		2C151C732307626E003094CA /* FizzBuzz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				2C151C4123075DD7003094CA /* AppDelegate.m */,
 				2C151C4323075DD7003094CA /* ViewController.h */,
 				2C151C4423075DD7003094CA /* ViewController.m */,
+				2C151C722307626E003094CA /* FizzBuzz.h */,
+				2C151C732307626E003094CA /* FizzBuzz.m */,
 				2C151C4623075DD7003094CA /* Main.storyboard */,
 				2C151C4923075DD8003094CA /* Assets.xcassets */,
 				2C151C4B23075DD8003094CA /* LaunchScreen.storyboard */,
@@ -265,6 +270,7 @@
 				2C151C4523075DD7003094CA /* ViewController.m in Sources */,
 				2C151C5023075DD8003094CA /* main.m in Sources */,
 				2C151C4223075DD7003094CA /* AppDelegate.m in Sources */,
+				2C151C742307626E003094CA /* FizzBuzz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
